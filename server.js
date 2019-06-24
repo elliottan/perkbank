@@ -1,11 +1,11 @@
 // Install express server
 const express = require('express');
 const path = require('path');
-const favicon = require('express-favicon');
+// const favicon = require('express-favicon');
 
 const app = express();
 
-app.use(favicon(__dirname + '/public/favicon.ico'));
+// app.use(favicon(__dirname + '/public/favicon.ico'));
 
 // Serve only the static files form the dist directory
 app.use(express.static(__dirname + '/dist/<name-of-app>'));
