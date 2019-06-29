@@ -4,7 +4,7 @@
     <h2 class="text-center text-primary">PerkBank</h2>
     <form>
       <div class="form-group">
-        <div #alert class="alert alert-primary fade show" role="alert">{{alertMessage}}</div>
+        <div #alert class="alert fade show" ngClass="{{alertClass}}" role="alert">{{alertMessage}}</div>
         <div class="text-left text-primary">Username</div>
         <input type="text" #username class="form-control" placeholder="" name="username" ngModel>
         <div class="text-left text-primary">Password</div>

@@ -8,11 +8,13 @@ import { Router } from '@angular/router';
 })
 export class LoginComponent implements OnInit {
   alertMessage: string;
+  alertClass: string;
 
   constructor(private router: Router) { }
 
   ngOnInit() {
     this.alertMessage = "Welcome to PerkBank online banking!";
+    this.alertClass = "alert-primary";
   }
 
   login(username, password) {
@@ -26,9 +28,11 @@ export class LoginComponent implements OnInit {
 
   navigateToRegister() {
     this.alertMessage = "The registration page will be launched soon :)"
+    this.alertClass = "alert-danger";
   }
 
   navigateToForgotPassword() {
-   this.alertMessage = "The \"forget password\" feature will be launched soon :)"
+    this.alertMessage = "The \"forget password\" feature will be launched soon :)"
+    this.alertClass = "alert-danger";
   }
 }
