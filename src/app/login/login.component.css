@@ -4,7 +4,7 @@ div.login-container .container {
   padding-top: 50px;
   height: 500px;
   max-width: 400px;
-  background-color: #EEFEFF;
+  background-color: #FFFFFF;
   border-width: 2;
   border-color: black;
   box-shadow: 2px 2px 7px 1px #64C1FF;
@@ -17,11 +17,9 @@ div.login-container h1 {
 }
 
 div.login-container .form-group {
+  max-width: 200px;
+  margin: auto;
   margin-top: 10px;
-}
-
-div.login-container .text-primary {
-  color: black;
 }
 
 div.login-container .input-group-text {
@@ -29,6 +27,11 @@ div.login-container .input-group-text {
   margin: auto;
   margin-top: 10px;
   margin-bottom: 10px;
+  cursor: pointer;
+}
+
+div.login-container .input-group-text:hover {
+  background-color: #F5F6F7 !important;
 }
 
 input[type=text], input[type=password] {
@@ -39,17 +42,23 @@ input[type=text], input[type=password] {
 div.login-container .input-group-prepend {
   max-width: 200px;
   margin: auto;
-}
-
-div.login-container .input-group-prepend .small-text-divider {
-  font-size: 10px;
-  padding-left: 50px;
-}
-
-div .small-text {
+  text-align: center;
   font-size: 10px;
 }
 
-div .input-group-backtomain {
-  
+div .input-group-small-links {
+  max-width: 200px;
+  margin: auto;
+  text-align: center;
+  text-decoration: underline;
+  cursor: pointer;
 }
+
+div .input-group-small-links:hover {
+  color: #D0D3D6 !important;
+}
+
+div .input-group-small-links:active {
+  color: black !important;
+}
+

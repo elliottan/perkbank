@@ -4,7 +4,7 @@ div.login-select-container .container {
   padding-top: 50px;
   height: 400px;
   max-width: 400px;
-  background-color: #EEFEFF;
+  background-color: #FFFFFF;
   border-width: 2;
   border-color: black;
   box-shadow: 2px 2px 7px 1px #64C1FF;
@@ -23,4 +23,9 @@ div.login-select-container .input-group-text {
   max-width: 200px;
   margin: auto;
   margin-top: 20px;
+  cursor: pointer;
+}
+
+div.login-select-container .input-group-text:hover {
+  background-color: #F5F6F7 !important;
 }

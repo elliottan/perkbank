@@ -4,18 +4,17 @@
     <h2 class="text-center text-primary">PerkBank</h2>
     <form> 
       <div class="form-group">
-        <div class="text-center text-primary">Username</div>
+        <div class="text-left text-primary">Username</div>
         <input type="text" #username class="form-control" placeholder="" name="username" ngModel>
-        <div class="text-center text-primary">Password</div>
+        <div class="text-left text-primary">Password</div>
         <input type="password" #password class="form-control" placeholder="" name="password">
         <div class="input-group-text" (click)="login(username.value, password.value)">Login</div>
         <div class="input-group-prepend">
-          <div class="small-text">Register</div>
-          <div class="small-text-divider"></div>
-          <div class="small-text">Forgot your password?</div>
-        </div>
-        <div class="input-group-prepend">
-          <div class="small-text">Back to main</div>
+          <div class="input-group-small-links" (click)="navigateToLoginSelection()">Back</div>
+          <div>&nbsp;•&nbsp;</div>
+          <div class="input-group-small-links" (click)="navigateToRegister()">Register</div>
+          <div>&nbsp;•&nbsp;</div>
+          <div class="input-group-small-links" (click)="navigateToForgotPassword()">Forgot password?</div>
         </div>
       </div>
     </form>
