@@ -1,12 +1,23 @@
-<div class="container">
-  <h1 class="text-center text-primary">P.B.</h1>
-  <h1 class="text-center text-primary">PerkBank</h1>
-  <form> 
-    <div class="form-group">
-      <div>Username:<input type="text" #username class="form-control" placeholder="" name="username" ngModel></div>
-      <div>Password:<input type="password" #password class="form-control" placeholder="" name="password"></div>
-      <div class="input-group-text" (click)="login(username.value, password.value)">Login</div>
-      <div></div>
-    </div>
-  </form>
+<div class="login-container">
+  <div class="container">
+    <h1 class="text-center text-primary">P.B.</h1>
+    <h2 class="text-center text-primary">PerkBank</h2>
+    <form> 
+      <div class="form-group">
+        <div class="text-center text-primary">Username</div>
+        <input type="text" #username class="form-control" placeholder="" name="username" ngModel>
+        <div class="text-center text-primary">Password</div>
+        <input type="password" #password class="form-control" placeholder="" name="password">
+        <div class="input-group-text" (click)="login(username.value, password.value)">Login</div>
+        <div class="input-group-prepend">
+          <div class="small-text">Register</div>
+          <div class="small-text-divider"></div>
+          <div class="small-text">Forgot your password?</div>
+        </div>
+        <div class="input-group-prepend">
+          <div class="small-text">Back to main</div>
+        </div>
+      </div>
+    </form>
+  </div>
 </div>
