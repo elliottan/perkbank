@@ -1,0 +1,26 @@
+
+div.login-select-container .container {
+  margin: auto;
+  margin-top: 100px;
+  padding-top: 50px;
+  height: 400px;
+  max-width: 400px;
+  background-color: #EEFEFF;
+  border-width: 2;
+  border-color: black;
+  box-shadow: 2px 2px 7px 1px #64C1FF;
+}
+
+div.login-select-container h1 {
+  font-size: 80px;
+}
+
+div.login-select-container .text-primary {
+  color: black;
+}
+
+div.login-select-container .input-group-text {
+  max-width: 200px;
+  margin: auto;
+  margin-top: 20px;
+}

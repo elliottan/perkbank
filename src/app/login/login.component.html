@@ -3,11 +3,9 @@
   <h1 class="text-center text-primary">PerkBank</h1>
   <form> 
     <div class="form-group">
-      <div class="input-group-prepend">
-        <div>Username:<input type="text" #username class="form-control" placeholder="" name="username" ngModel></div>
-        <div>Password:<input type="password" #password class="form-control" placeholder="" name="password"></div>
-        <div class="input-group-text" (click)="login(username.value, password.value)">Login</div>
-      </div>
+      <div>Username:<input type="text" #username class="form-control" placeholder="" name="username" ngModel></div>
+      <div>Password:<input type="password" #password class="form-control" placeholder="" name="password"></div>
+      <div class="input-group-text" (click)="login(username.value, password.value)">Login</div>
       <div></div>
     </div>
   </form>
