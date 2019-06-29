@@ -1,8 +1,8 @@
 div.login-container .container {
   margin: auto;
-  margin-top: 100px;
+  margin-top: 60px;
   padding-top: 50px;
-  height: 500px;
+  height: 580px;
   max-width: 400px;
   background-color: #FFFFFF;
   border-width: 2;
@@ -17,9 +17,18 @@ div.login-container h1 {
 }
 
 div.login-container .form-group {
-  max-width: 200px;
+  max-width: 250px;
   margin: auto;
   margin-top: 10px;
+}
+
+div.login-container .form-group .text-primary{
+  max-width: 200px;
+  margin: auto;
+}
+
+div.login-container .alert {
+  font-size: 14px;
 }
 
 div.login-container .input-group-text {

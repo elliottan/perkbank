@@ -7,15 +7,17 @@ import { Router } from '@angular/router';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
+  alertMessage: string;
 
   constructor(private router: Router) { }
 
   ngOnInit() {
+    this.alertMessage = "Welcome to PerkBank online banking!";
   }
 
   login(username, password) {
-    console.log(username)
-    console.log(password)
+    console.log(username);
+    console.log(password);
   }
 
   navigateToLoginSelection() {
@@ -23,15 +25,10 @@ export class LoginComponent implements OnInit {
   }
 
   navigateToRegister() {
-    /*app.controller("demoController", function($scope, $window) {
-      $scope.save = function() {
-           window.alert("hi!");
-      };
-    });
-    Window.alert("The register page will be created in the future.")*/
+    this.alertMessage = "The registration page will be launched soon :)"
   }
 
   navigateToForgotPassword() {
-    //Window.alert("The forget password page will be created in the future.")
+   this.alertMessage = "The \"forget password\" feature will be launched soon :)"
   }
 }
