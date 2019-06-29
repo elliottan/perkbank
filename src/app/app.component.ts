@@ -7,9 +7,4 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'perkbank';
-
-  login(username, password) {
-  	console.log(username)
-  	console.log(password)
-  }
 }
