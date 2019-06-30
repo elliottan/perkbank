@@ -32,6 +32,7 @@ export class RegisterComponent implements OnInit {
   }
 
   navigateToLoginSelection() {
+    sessionStorage.setItem("systemMessage", "Registration cancelled.");
     this.router.navigate(["/login-select"]);
   }
 }
