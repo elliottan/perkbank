@@ -6,28 +6,32 @@ import { AuthGuard } from './auth.guard';
 import { LoginSelectComponent } from './login-select/login-select.component';
 import { LoginComponent } from './login/login.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { OtpCheckComponent } from './otp-check/otp-check.component';
 
 const routes: Routes = [
-    {
-        path      : '',
-        pathMatch : 'full',
-        redirectTo: 'login-select',
-    },
-    {
-        path      : 'dashboard',
-        component : DashboardComponent,
-        canActivate: [AuthGuard]
- 
-    },
-    {
-        path      : 'login-select',
-        component : LoginSelectComponent
-    },
-    {
-        path      : 'login',
-        component : LoginComponent
-    }
- 
+  {
+      path      : '',
+      pathMatch : 'full',
+      redirectTo: 'login-select',
+  },
+  {
+      path      : 'dashboard',
+      component : DashboardComponent,
+      canActivate: [AuthGuard]
+
+  },
+  {
+      path      : 'login-select',
+      component : LoginSelectComponent
+  },
+  {
+      path      : 'login',
+      component : LoginComponent
+  },
+  {
+      path      : 'otp-check',
+      component : OtpCheckComponent
+  }
 ];
 
 @NgModule({

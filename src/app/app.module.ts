@@ -8,13 +8,15 @@ import { AppComponent } from './app.component';
 import { LoginSelectComponent } from './login-select/login-select.component';
 import { LoginComponent } from './login/login.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { OtpCheckComponent } from './otp-check/otp-check.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginSelectComponent,
     LoginComponent,
-    DashboardComponent
+    DashboardComponent,
+    OtpCheckComponent
   ],
   imports: [
     BrowserModule,

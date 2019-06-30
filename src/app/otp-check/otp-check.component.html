@@ -1,0 +1,19 @@
+<div class="otp-check-container">
+  <div class="container">
+    <h1 class="text-center text-primary">P.B.</h1>
+    <h2 class="text-center text-primary">PerkBank</h2>
+    <form>
+      <div class="form-group">
+        <div #alert class="alert fade show" ngClass="{{alertClass}}" role="alert">{{alertMessage}}</div>
+        <div class="text-left text-primary">OTP Code</div>
+        <input type="text" #otpCode class="form-control" name="otp-code" ngModel>
+        <div class="input-group-text" (click)="verifyOtp(otpCode.value)">Enter</div>
+        <div class="input-group-prepend">
+          <div class="input-group-small-links" (click)="navigateToLogin()">Cancel</div>
+          <div>&nbsp;•&nbsp;</div>
+          <div class="input-group-small-links" (click)="resendOtp()">Resend OTP</div>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

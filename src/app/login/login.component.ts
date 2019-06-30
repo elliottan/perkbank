@@ -18,8 +18,12 @@ export class LoginComponent implements OnInit {
   }
 
   login(username, password) {
-    console.log(username);
-    console.log(password);
+    // console.log(username);
+    // console.log(password);
+
+    // TODO: perform username and password checks
+
+    this.router.navigate(["/otp-check"]);
   }
 
   navigateToLoginSelection() {

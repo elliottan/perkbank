@@ -1,0 +1,73 @@
+div.otp-check-container .container {
+  margin: auto;
+  margin-top: 60px;
+  padding-top: 50px;
+  height: 580px;
+  max-width: 400px;
+  background-color: #FFFFFF;
+  border-width: 2;
+  border-color: black;
+  box-shadow: 2px 2px 7px 1px #64C1FF;
+  text-align: center;
+}
+
+div.otp-check-container h1 {
+  font-size: 80px;
+
+}
+
+div.otp-check-container .form-group {
+  max-width: 250px;
+  margin: auto;
+  margin-top: 10px;
+}
+
+div.otp-check-container .form-group .text-primary{
+  max-width: 200px;
+  margin: auto;
+}
+
+div.otp-check-container .alert {
+  font-size: 14px;
+}
+
+div.otp-check-container .input-group-text {
+  max-width: 200px;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+div.otp-check-container .input-group-text:hover {
+  background-color: #F5F6F7 !important;
+}
+
+input[type=text], input[type=password] {
+  max-width: 200px;
+  margin: auto;
+}
+
+div.otp-check-container .input-group-prepend {
+  max-width: 200px;
+  margin: auto;
+  text-align: center;
+  font-size: 10px;
+}
+
+div .input-group-small-links {
+  max-width: 200px;
+  margin: auto;
+  text-align: center;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+div .input-group-small-links:hover {
+  color: #D0D3D6 !important;
+}
+
+div .input-group-small-links:active {
+  color: black !important;
+}
+
