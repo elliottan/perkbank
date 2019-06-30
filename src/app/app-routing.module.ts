@@ -12,13 +12,7 @@ const routes: Routes = [
   {
       path      : '',
       pathMatch : 'full',
-      redirectTo: 'login-select',
-  },
-  {
-      path      : 'dashboard',
-      component : DashboardComponent,
-      canActivate: [AuthGuard]
-
+      redirectTo: 'dashboard',
   },
   {
       path      : 'login-select',
@@ -30,7 +24,14 @@ const routes: Routes = [
   },
   {
       path      : 'otp-check',
-      component : OtpCheckComponent
+      component : OtpCheckComponent,
+      canActivate: [AuthGuard]
+  },
+  {
+      path      : 'dashboard',
+      component : DashboardComponent,
+      canActivate: [AuthGuard]
+
   }
 ];
 

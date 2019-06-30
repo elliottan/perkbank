@@ -13,7 +13,7 @@ export class AuthGuard implements CanActivate {
     next: ActivatedRouteSnapshot,
     state: RouterStateSnapshot): Observable<boolean | UrlTree> | Promise<boolean | UrlTree> | boolean | UrlTree {
     
-    if (sessionStorage.getItem('x-auth')) {
+    if (sessionStorage.getItem("login-auth")) {
        // Token from the login is available, so the user can pass to the route
        return true
     } else  {

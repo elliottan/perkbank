@@ -23,6 +23,7 @@ export class LoginComponent implements OnInit {
 
     // TODO: perform username and password checks
 
+    sessionStorage.setItem("login-auth", "true")
     this.router.navigate(["/otp-check"]);
   }
 
