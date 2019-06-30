@@ -15,6 +15,12 @@ export class LoginComponent implements OnInit {
   ngOnInit() {
     this.alertMessage = "Welcome to PerkBank online banking!";
     this.alertClass = "alert-primary";
+
+    if (sessionStorage.getItem("systemMessage")) {
+      this.alertMessage = sessionStorage.getItem("systemMessage");
+      this.alertClass = "alert-warning";
+      sessionStorage.removeItem("systemMessage")
+    }
   }
 
   login(username, password) {
@@ -28,12 +34,12 @@ export class LoginComponent implements OnInit {
   }
 
   navigateToLoginSelection() {
+  sessionStorage.setItem("systemMessage", "Login cancelled.");
     this.router.navigate(["/login-select"]);
   }
 
   navigateToRegister() {
-    this.alertMessage = "The registration page will be launched soon :)"
-    this.alertClass = "alert-danger";
+    this.router.navigate(["/register"]);
   }
 
   navigateToForgotPassword() {

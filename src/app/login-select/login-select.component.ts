@@ -7,10 +7,17 @@ import { Router } from '@angular/router';
   styleUrls: ['./login-select.component.css']
 })
 export class LoginSelectComponent implements OnInit {
+  alertMessage: string;
+  alertClass: string;
 
   constructor(private router: Router) { }
 
   ngOnInit() {
+    if (sessionStorage.getItem("systemMessage")) {
+      this.alertMessage = sessionStorage.getItem("systemMessage");
+      this.alertClass = "alert-warning";
+      sessionStorage.removeItem("systemMessage")
+    }
   }
 
   navigateToClientLogin() {

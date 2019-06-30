@@ -2,6 +2,7 @@
   <div class="container">
     <h1 class="text-center text-primary">P.B.</h1>
     <h2 class="text-center text-primary">PerkBank</h2>
+    <div #alert class="alert fade show" ngClass="{{alertClass}}" role="alert">{{alertMessage}}</div>
     <div class="input-group-text" (click)="navigateToClientLogin()">Client Login</div>
     <div class="input-group-text" (click)="navigateToEmployeeLogin()">Employee Login</div>
   </div>

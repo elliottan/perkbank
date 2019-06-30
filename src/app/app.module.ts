@@ -9,6 +9,7 @@ import { LoginSelectComponent } from './login-select/login-select.component';
 import { LoginComponent } from './login/login.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { OtpCheckComponent } from './otp-check/otp-check.component';
+import { RegisterComponent } from './register/register.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { OtpCheckComponent } from './otp-check/otp-check.component';
     LoginSelectComponent,
     LoginComponent,
     DashboardComponent,
-    OtpCheckComponent
+    OtpCheckComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,

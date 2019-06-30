@@ -21,7 +21,8 @@ export class OtpCheckComponent implements OnInit {
   }
 
   navigateToLogin() {
-    this.router.navigate(["/login"]);
+    sessionStorage.setItem("systemMessage", "Login cancelled.");
+    this.router.navigate(["/login-select"]);
   }
 
   resendOtp() {

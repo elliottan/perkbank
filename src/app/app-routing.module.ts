@@ -7,6 +7,7 @@ import { LoginSelectComponent } from './login-select/login-select.component';
 import { LoginComponent } from './login/login.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { OtpCheckComponent } from './otp-check/otp-check.component';
+import { RegisterComponent } from './register/register.component';
 
 const routes: Routes = [
   {
@@ -21,6 +22,10 @@ const routes: Routes = [
   {
       path      : 'login',
       component : LoginComponent
+  },
+  {
+      path      : 'register',
+      component : RegisterComponent,
   },
   {
       path      : 'otp-check',

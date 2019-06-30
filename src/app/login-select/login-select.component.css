@@ -2,7 +2,7 @@ div.login-select-container .container {
   margin: auto;
   margin-top: 60px;
   padding-top: 50px;
-  height: 400px;
+  height: 420px;
   max-width: 400px;
   background-color: #FFFFFF;
   border-width: 2;
@@ -13,6 +13,11 @@ div.login-select-container .container {
 div.login-select-container h1 {
   font-size: 80px;
 
+}
+
+div.login-select-container .alert {
+  max-width: 250px;
+  margin: auto;
 }
 
 div.login-select-container .text-primary {
