@@ -41,10 +41,13 @@ div.dashboard-container .input-group-text {
   margin: auto;
   margin-top: 20px;
   margin-bottom: 10px;
+}
+
+div.dashboard-container .inactive {
   cursor: pointer;
 }
 
-div.dashboard-container .input-group-text:hover {
+div.dashboard-container .inactive:hover {
   background-color: #F5F6F7 !important;
 }
 
@@ -79,4 +82,8 @@ div.dashboard-container .input-group-prepend {
 
 .section-split {
   margin-top: 40px;
+}
+
+.active {
+  background-color: darkgray;
 }

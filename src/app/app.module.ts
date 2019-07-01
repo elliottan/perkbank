@@ -12,6 +12,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { OtpCheckComponent } from './otp-check/otp-check.component';
 import { RegisterComponent } from './register/register.component';
 import { NewPaymentRequestComponent } from './new-payment-request/new-payment-request.component';
+import { DraftPaymentRequestComponent } from './draft-payment-request/draft-payment-request.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { NewPaymentRequestComponent } from './new-payment-request/new-payment-re
     DashboardComponent,
     OtpCheckComponent,
     RegisterComponent,
-    NewPaymentRequestComponent
+    NewPaymentRequestComponent,
+    DraftPaymentRequestComponent
   ],
   imports: [
     BrowserModule,

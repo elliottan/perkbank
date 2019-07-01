@@ -5,9 +5,11 @@ import { AuthGuard } from './auth.guard';
 
 import { LoginSelectComponent } from './login-select/login-select.component';
 import { LoginComponent } from './login/login.component';
-import { DashboardComponent } from './dashboard/dashboard.component';
 import { OtpCheckComponent } from './otp-check/otp-check.component';
 import { RegisterComponent } from './register/register.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { NewPaymentRequestComponent } from './new-payment-request/new-payment-request.component';
+import { DraftPaymentRequestComponent } from './draft-payment-request/draft-payment-request.component';
 
 const routes: Routes = [
   {
@@ -35,7 +37,16 @@ const routes: Routes = [
       path      : 'dashboard',
       component : DashboardComponent,
       canActivate: [AuthGuard]
-
+  },
+  {
+      path      : 'new-payment-request',
+      component : NewPaymentRequestComponent,
+      canActivate: [AuthGuard]
+  },
+  {
+      path      : 'draft-payment-request',
+      component : DraftPaymentRequestComponent,
+      canActivate: [AuthGuard]
   }
 ];
 

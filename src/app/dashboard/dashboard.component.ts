@@ -22,7 +22,7 @@ export class DashboardComponent implements OnInit {
   }
 
   newPaymentRequest() {
-
+    this.router.navigate(["/new-payment-request"]);
   }
 
   viewDrafts() {
@@ -30,7 +30,7 @@ export class DashboardComponent implements OnInit {
   }
 
   viewExisting() {
-  
+
   }
 
   navigateToLoginSelection() {
