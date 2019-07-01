@@ -1,3 +1,40 @@
-<p>
-  dashboard works!
-</p>
+<div class="dashboard-container">
+  <div class="container">
+    <h1 class="text-center text-primary">P.B.</h1>
+    <div class="row">
+      <div class="col-sm-3">
+        <div class="left-container">
+          <h3 class="text-center text-primary">Payment Requests</h3>
+          <div class="input-group-text" (click)="newPaymentRequest()">New</div>
+          <div class="input-group-text" (click)="viewDrafts()">Drafts ({{draftCount}})</div>
+          <div class="input-group-text" (click)="viewExisting">Existing</div>
+
+        <!--<div #alert class="alert fade show" ngClass="{{alertClass}}" role="alert">{{alertMessage}}</div>
+        <div class="text-left text-primary">Username</div>
+        <input type="text" #username class="form-control" placeholder="" name="username" ngModel>
+        <div class="text-left text-primary">Password</div>
+        <input type="password" #password class="form-control" placeholder="" name="password">
+        <div class="text-left text-primary">Confirm Password</div>
+        <input type="password" #passwordconfirm class="form-control" placeholder="" name="password-confirm">
+        <div class="text-left text-primary">Mobile Number</div>
+        <input type="text" #mobilenumber class="form-control" placeholder="" name="mobile-number" ngModel>
+        <div class="text-left text-primary">Email Address</div>
+        <input type="text" #emailaddress class="form-control" placeholder="" name="email-address" ngModel>
+        <div class="input-group-text" (click)="register(username.value, password.value, passwordconfirm.value, mobilenumber.value, emailaddress.value)">Register</div>
+        <div class="input-group-prepend">
+          <div class="input-group-small-links" (click)="navigateToLoginSelection()">Cancel</div>
+        </div>-->
+        </div>
+      </div>
+      <div class="col border-left">
+        <div class="right-container">
+          <div class="text-right text-primary">Welcome, {{name}}!</div>
+          <div class="text-right input-group-small-links" (click)="navigateToLoginSelection()">Logout</div>
+          <div class="section-split"></div>
+          <div class="text-left text-primary">At a glance:</div>
+          <div class="h3 text-left text-primary">Payments in the last month</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

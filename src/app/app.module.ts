@@ -11,6 +11,7 @@ import { LoginComponent } from './login/login.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { OtpCheckComponent } from './otp-check/otp-check.component';
 import { RegisterComponent } from './register/register.component';
+import { NewPaymentRequestComponent } from './new-payment-request/new-payment-request.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { RegisterComponent } from './register/register.component';
     LoginComponent,
     DashboardComponent,
     OtpCheckComponent,
-    RegisterComponent
+    RegisterComponent,
+    NewPaymentRequestComponent
   ],
   imports: [
     BrowserModule,
