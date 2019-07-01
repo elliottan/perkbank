@@ -26,7 +26,7 @@ export class DashboardComponent implements OnInit {
   }
 
   viewDrafts() {
-
+    this.router.navigate(["/draft-payment-request"]); 
   }
 
   viewExisting() {

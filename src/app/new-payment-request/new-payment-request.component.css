@@ -1,0 +1,89 @@
+div.new-payment-request-container {
+  margin: auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding-top: 20px;
+  height: 780px;
+  max-width: 1000px;
+  background-color: #FFFFFF;
+  border-width: 2;
+  border-color: black;
+  box-shadow: 2px 2px 7px 1px #64C1FF;
+  text-align: center;
+}
+
+div.new-payment-request-container .container {
+  max-width: 900px;
+}
+
+div.new-payment-request-container h1 {
+  font-size: 80px;
+}
+
+div.new-payment-request-container .form-group {
+  max-width: 250px;
+  margin: auto;
+  margin-top: 10px;
+}
+
+div.new-payment-request-container .form-group .text-primary{
+  max-width: 200px;
+  margin: auto;
+  margin-top: 10px;
+}
+
+div.new-payment-request-container .alert {
+  font-size: 14px;
+}
+
+div.new-payment-request-container .input-group-text {
+  max-width: 120px;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+div.new-payment-request-container .inactive {
+  cursor: pointer;
+}
+
+div.new-payment-request-container .inactive:hover {
+  background-color: #F5F6F7 !important;
+}
+
+input[type=text], input[type=password] {
+  max-width: 200px;
+  margin: auto;
+}
+
+div.new-payment-request-container .input-group-prepend {
+  max-width: 200px;
+  margin: auto;
+  text-align: center;
+  font-size: 10px;
+}
+
+.input-group-small-links {
+  margin: auto;
+  text-align: center;
+  text-decoration: underline;
+  cursor: pointer;
+  font-size: 10px;
+  color: black;
+}
+
+.input-group-small-links:hover {
+  color: #D0D3D6 !important;
+}
+
+.input-group-small-links:active {
+  color: black !important;
+}
+
+.section-split {
+  margin-top: 40px;
+}
+
+.active {
+  background-color: darkgray;
+}
