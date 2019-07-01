@@ -25,7 +25,7 @@ const routes: Routes = [
   },
   {
       path      : 'register',
-      component : RegisterComponent,
+      component : RegisterComponent
   },
   {
       path      : 'otp-check',

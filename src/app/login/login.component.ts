@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { UserService } from 'src/app/user.service';
 
 @Component({
   selector: 'app-login',
@@ -10,7 +11,7 @@ export class LoginComponent implements OnInit {
   alertMessage: string;
   alertClass: string;
 
-  constructor(private router: Router) { }
+  constructor(private router: Router, private userService: UserService) { }
 
   ngOnInit() {
     this.alertMessage = "Welcome to PerkBank online banking!";
@@ -28,8 +29,9 @@ export class LoginComponent implements OnInit {
     // console.log(password);
 
     // TODO: perform username and password checks
+    console.log(this.userService.getUser(username).subscribe((res)=>{console.log(res);}));
 
-    sessionStorage.setItem("login-auth", "true")
+    sessionStorage.setItem("login-auth", "true");
     this.router.navigate(["/otp-check"]);
   }
 
