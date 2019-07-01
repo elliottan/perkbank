@@ -25,11 +25,20 @@ export class LoginComponent implements OnInit {
   }
 
   login(username, password) {
-    // console.log(username);
-    // console.log(password);
+    var users = JSON.parse(localStorage.getItem("users"));
 
-    // TODO: perform username and password checks
-    console.log(this.userService.getUser(username).subscribe((res)=>{console.log(res);}));
+    // Perform username and password checks
+    if (!users[username]) {
+      this.alertMessage = "Username does not exist"
+      this.alertClass = "alert-danger";
+      return
+    }
+
+    if (users[username]["password"] != password) {
+      this.alertMessage = "Password is incorrect"
+      this.alertClass = "alert-danger";
+      return;
+    }
 
     sessionStorage.setItem("login-auth", "true");
     this.router.navigate(["/otp-check"]);

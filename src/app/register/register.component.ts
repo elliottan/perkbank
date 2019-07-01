@@ -16,16 +16,27 @@ export class RegisterComponent implements OnInit {
   }
 
   register(username, password, passwordconfirm, mobilenumber, emailaddress) {
-    // Ensure that username has not been taken
+    var users = JSON.parse(localStorage.getItem("users"));
 
-    this.alertMessage = "The \"forget password\" feature will be launched soon :)"
-    this.alertClass = "alert-danger";
+    // Ensure that username has not been taken
+    if (users[username]) {
+      this.alertMessage = "Username already exists"
+      this.alertClass = "alert-danger";
+      return
+    }
 
     // Ensure that password matches
+    if (password != passwordconfirm) {
+      this.alertMessage = "Passwords do not match"
+      this.alertClass = "alert-danger";
+      return;
+    }
 
     // TODO: validate all other fields (e.g. email address unique and valid format, etc)
 
     // Complete registration
+    users[username] = { "username": username, "password": password, "mobilenumber": mobilenumber, "emailaddress": emailaddress };
+    localStorage.setItem("users", JSON.stringify(users));
 
     sessionStorage.setItem("systemMessage", "Registration successful, please login.");
     this.router.navigate(["/login"]);
