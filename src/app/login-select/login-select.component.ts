@@ -16,8 +16,9 @@ export class LoginSelectComponent implements OnInit {
     if (sessionStorage.getItem("systemMessage")) {
       this.alertMessage = sessionStorage.getItem("systemMessage");
       this.alertClass = "alert-warning";
-      sessionStorage.removeItem("systemMessage")
     }
+
+    sessionStorage.clear(); // Clear login
   }
 
   navigateToClientLogin() {

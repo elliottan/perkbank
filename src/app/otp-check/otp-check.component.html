@@ -6,7 +6,7 @@
       <div class="form-group">
         <div #alert class="alert fade show" ngClass="{{alertClass}}" role="alert">{{alertMessage}}</div>
         <div class="text-left text-primary">OTP Code</div>
-        <input type="text" #otpCode class="form-control" name="otp-code" ngModel>
+        <input type="text" #otpCode class="form-control" name="otp-code" placeholder="OTP is 1234 for prototype" ngModel>
         <div class="input-group-text" (click)="verifyOtp(otpCode.value)">Enter</div>
         <div class="input-group-prepend">
           <div class="input-group-small-links" (click)="navigateToLogin()">Cancel</div>

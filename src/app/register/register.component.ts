@@ -32,6 +32,13 @@ export class RegisterComponent implements OnInit {
       return;
     }
 
+    // Ensure that mobile number has 8 digits
+    if (mobilenumber.length != 8) {
+      this.alertMessage = "Mobile number must have 8 digits"
+      this.alertClass = "alert-danger";
+      return;
+    }
+
     // TODO: validate all other fields (e.g. email address unique and valid format, etc)
 
     // Complete registration

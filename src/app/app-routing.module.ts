@@ -29,8 +29,7 @@ const routes: Routes = [
   },
   {
       path      : 'otp-check',
-      component : OtpCheckComponent,
-      canActivate: [AuthGuard]
+      component : OtpCheckComponent
   },
   {
       path      : 'dashboard',

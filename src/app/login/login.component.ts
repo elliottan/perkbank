@@ -40,7 +40,7 @@ export class LoginComponent implements OnInit {
       return;
     }
 
-    sessionStorage.setItem("login-auth", "true");
+    sessionStorage.setItem("login-auth", username);
     this.router.navigate(["/otp-check"]);
   }
 
