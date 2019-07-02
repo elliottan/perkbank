@@ -1,27 +1,15 @@
 # Perkbank
+The Perkbank online system may be found at: https://perkbank.herokuapp.com/.
+The GitHub repository may be found at: https://github.com/elliottan/perkbank.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.3.
+## Description
+This prototype represents a small portion of the functionalities that the proposed solution will have. It runs purely as a single-page application, without connections to a backend web server nor any database servers. A basic registration feature is available that will allow you to log-in using a newly created account during the same session. Also, the front-facing payment request form that clients will use to submit payment order requests may be found in the "New" tab.
 
-## Development server
+## Running the prototype
+Navigate to the Heroku application link provided above, and you will be greeted by the landing page. This page will probably be ommitted from the final product, as clients and employees should use separate links to access the system.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+### Logging in
+There is already a preloaded account with username "admin" and password "admin" that you can use to log in. Enter "1234" as the authentication 2FA code to complete the login process.
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+## Closing remarks
+We have also developed screen mockups for the remaining proposed features, available in the executive summary.
