@@ -28,10 +28,6 @@ export class DashboardComponent implements OnInit {
     this.router.navigate(["/draft-payment-request"]); 
   }
 
-  viewExisting() {
-
-  }
-
   navigateToLoginSelection() {
     sessionStorage.setItem("systemMessage", "You have logged out.");
     this.router.navigate(["/login-select"]);
