@@ -21,7 +21,7 @@
           <div class="input-group mb-3">
             <select class="custom-select inputGroupSelect" #country (change)="changeCountry(country.value)">
               <option selected>Choose a country...</option>
-              <option value="1">Singapore</option>
+              <option value="1">Canada</option>
               <option value="2">United States</option>
               <option value="3">United Kingdom</option>
               <option value="4">Germany</option>
@@ -94,6 +94,12 @@
               <div class="col">
                 <div class="text-left text-primary">Bank name</div>
                 <input type="text" #beneficiarybankname class="form-control" placeholder="" name="beneficiarybankname" ngModel>
+              </div>
+            </div>
+            <div class="row" hidden id="bankAddressRow">
+              <div class="col">
+                <div class="text-left text-primary">Bank address</div>
+                <input type="text" #beneficiarybankaddress class="form-control" placeholder="" name="beneficiarybankaddress" ngModel>
               </div>
             </div>
 

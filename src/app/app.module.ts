@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
+import { CommonModule } from '@angular/common';
 
 import { AuthGuard } from './auth.guard';
 
@@ -26,7 +27,7 @@ import { DraftPaymentRequestComponent } from './draft-payment-request/draft-paym
     DraftPaymentRequestComponent
   ],
   imports: [
-    NgbModule,
+    CommonModule,
     BrowserModule,
     AppRoutingModule
   ],

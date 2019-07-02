@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { NgbDropdown } from '@ng-bootstrap/ng-bootstrap';
+import { CommonModule } from '@angular/common';  
 
 @Component({
   selector: 'app-new-payment-request',
@@ -36,15 +36,12 @@ export class NewPaymentRequestComponent implements OnInit {
 
   changeCountry(countryValue) {
     switch (parseInt(countryValue)) {
-      case 1: // Singapore
-      console.log("display fields for sg");
+      case 1: // Canada
+        console.log("display fields for canada: need to include beneficiary bank address");
+        document.getElementById("bankAddressRow").hidden = false;
         break;
       case 2: // US
-      console.log("display fields for US");
-        break;
       case 3: // UK
-      console.log("display fields for UK");
-        break;
       case 4: // Germany
       case 5: // Japan
       case 6: // China
@@ -52,7 +49,8 @@ export class NewPaymentRequestComponent implements OnInit {
       case 8: // Russia
       case 9: // India
       case 10: // Australia
-        console.log("display fields for Aus");
+        console.log("hide bank address")
+        document.getElementById("bankAddressRow").hidden = true;
         break;
       default:
         break;
