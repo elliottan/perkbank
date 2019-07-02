@@ -15,7 +15,7 @@ export class RegisterComponent implements OnInit {
   ngOnInit() {
   }
 
-  register(username, password, passwordconfirm, mobilenumber, emailaddress) {
+  register(name, username, password, passwordconfirm, mobilenumber, emailaddress) {
     var users = JSON.parse(localStorage.getItem("users"));
 
     // Ensure that username has not been taken
@@ -42,7 +42,7 @@ export class RegisterComponent implements OnInit {
     // TODO: validate all other fields (e.g. email address unique and valid format, etc)
 
     // Complete registration
-    users[username] = { "username": username, "password": password, "mobilenumber": mobilenumber, "emailaddress": emailaddress };
+    users[username] = { "name": name, "username": username, "password": password, "mobilenumber": mobilenumber, "emailaddress": emailaddress };
     localStorage.setItem("users", JSON.stringify(users));
 
     sessionStorage.setItem("systemMessage", "Registration successful, please login.");

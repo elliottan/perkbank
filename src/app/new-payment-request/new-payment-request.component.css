@@ -21,13 +21,10 @@ div.new-payment-request-container h1 {
 }
 
 div.new-payment-request-container .form-group {
-  max-width: 250px;
   margin: auto;
-  margin-top: 10px;
 }
 
 div.new-payment-request-container .form-group .text-primary{
-  max-width: 200px;
   margin: auto;
   margin-top: 10px;
 }
@@ -52,7 +49,6 @@ div.new-payment-request-container .inactive:hover {
 }
 
 input[type=text], input[type=password] {
-  max-width: 200px;
   margin: auto;
 }
 

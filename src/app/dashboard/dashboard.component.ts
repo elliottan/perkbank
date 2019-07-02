@@ -15,9 +15,8 @@ export class DashboardComponent implements OnInit {
   constructor(private router: Router) { }
 
   ngOnInit() {
-
-
-    this.name = sessionStorage.getItem("login-otp-auth");
+    var users = JSON.parse(localStorage.getItem("users"));
+    this.name = users[sessionStorage.getItem("login-otp-auth")]["name"];
     this.draftCount = 0;
   }
 

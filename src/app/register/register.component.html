@@ -5,6 +5,8 @@
     <form>
       <div class="form-group">
         <div #alert class="alert fade show" ngClass="{{alertClass}}" role="alert">{{alertMessage}}</div>
+        <div class="text-left text-primary">Full Name</div>
+        <input type="text" #name class="form-control" placeholder="" name="name" ngModel>
         <div class="text-left text-primary">Username</div>
         <input type="text" #username class="form-control" placeholder="" name="username" ngModel>
         <div class="text-left text-primary">Password</div>
@@ -15,7 +17,7 @@
         <input type="text" #mobilenumber class="form-control" placeholder="" name="mobile-number" ngModel>
         <div class="text-left text-primary">Email Address</div>
         <input type="text" #emailaddress class="form-control" placeholder="" name="email-address" ngModel>
-        <div class="input-group-text" (click)="register(username.value, password.value, passwordconfirm.value, mobilenumber.value, emailaddress.value)">Register</div>
+        <div class="input-group-text" (click)="register(name.value, username.value, password.value, passwordconfirm.value, mobilenumber.value, emailaddress.value)">Register</div>
         <div class="input-group-prepend">
           <div class="input-group-small-links" (click)="navigateToLoginSelection()">Cancel</div>
         </div>
