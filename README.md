@@ -5,7 +5,7 @@ The GitHub repository may be found at: https://github.com/elliottan/perkbank.
 ## Description
 This prototype represents a small portion of the functionalities that the proposed solution will have. It runs purely as a single-page application, without connections to a backend web server nor any database servers. A basic registration feature is available that will allow you to log-in using a newly created account during the same session. Also, the front-facing payment request form that clients will use to submit payment order requests may be found in the "New" tab.
 
-### Framworks
+### Frameworks
 The web application was conceived with an Angular front-end, and basic Node.js server for deployment to Heroku.
 
 ## Running the prototype
