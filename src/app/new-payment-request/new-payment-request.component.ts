@@ -56,4 +56,19 @@ export class NewPaymentRequestComponent implements OnInit {
         break;
     }
   }
+
+  submit(country, accountname, accountno, currency, amount, valuedate, charges,
+    beneficiaryname, beneficiaryaccountno, beneficiarybankcode, beneficiarybankname,
+    intermediarybankcode, intermediarybankname, paymentdetails) {
+      // Charges:
+      // 1: Costs borne by beneficiary
+      // 2: Costs borne by payer
+      // 3: Shared costs
+  }
+
+  saveDraft(country, accountname, accountno, currency, amount, valuedate, charges,
+    beneficiaryname, beneficiaryaccountno, beneficiarybankcode, beneficiarybankname,
+    intermediarybankcode, intermediarybankname, paymentdetails) {
+
+  }
 }
