@@ -83,3 +83,8 @@ div.new-payment-request-container .input-group-prepend {
 .active {
   background-color: darkgray;
 }
+
+#inputGroupSelect01 {
+  max-width: 300px;
+  margin-top: 10px;
+}

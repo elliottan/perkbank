@@ -33,4 +33,29 @@ export class NewPaymentRequestComponent implements OnInit {
     sessionStorage.setItem("systemMessage", "You have logged out.");
     this.router.navigate(["/login-select"]);
   }
+
+  changeCountry(countryValue) {
+    switch (parseInt(countryValue)) {
+      case 1: // Singapore
+      console.log("display fields for sg");
+        break;
+      case 2: // US
+      console.log("display fields for US");
+        break;
+      case 3: // UK
+      console.log("display fields for UK");
+        break;
+      case 4: // Germany
+      case 5: // Japan
+      case 6: // China
+      case 7: // Korea
+      case 8: // Russia
+      case 9: // India
+      case 10: // Australia
+        console.log("display fields for Aus");
+        break;
+      default:
+        break;
+    }
+  }
 }

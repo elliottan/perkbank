@@ -18,19 +18,21 @@
           <div class="h3 text-left text-primary">New payment request</div>
           <div class="text-left text-primary">What country is your beneficiary from?</div>
 
-          <div class="row">
-            <div class="col">
-              <div ngbDropdown class="d-inline-block">
-                <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>Toggle dropdown</button>
-                <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
-                  <button ngbDropdownItem>Action - 1</button>
-                  <button ngbDropdownItem>Another Action</button>
-                  <button ngbDropdownItem>Something else is here</button>
-                </div>
-              </div>
-            </div>
+          <div class="input-group mb-3">
+            <select class="custom-select" #country id="inputGroupSelect01" (change)="changeCountry(country.value)">
+              <option selected>Choose a country...</option>
+              <option value="1">Singapore</option>
+              <option value="2">United States</option>
+              <option value="3">United Kingdom</option>
+              <option value="4">Germany</option>
+              <option value="5">Japan</option>
+              <option value="6">China</option>
+              <option value="7">Korea</option>
+              <option value="8">Russia</option>
+              <option value="9">India</option>
+              <option value="10">Australia</option>
+            </select>
           </div>
-
 
           <!--<form>
             <div class="form-group">
