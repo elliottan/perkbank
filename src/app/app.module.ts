@@ -1,6 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { HttpClientModule } from '@angular/common/http';
 
 import { AuthGuard } from './auth.guard';
 
@@ -27,7 +26,6 @@ import { DraftPaymentRequestComponent } from './draft-payment-request/draft-paym
   ],
   imports: [
     BrowserModule,
-    HttpClientModule,
     AppRoutingModule
   ],
   providers: [AuthGuard],

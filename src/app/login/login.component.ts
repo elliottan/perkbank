@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { UserService } from 'src/app/user.service';
 
 @Component({
   selector: 'app-login',
@@ -11,7 +10,7 @@ export class LoginComponent implements OnInit {
   alertMessage: string;
   alertClass: string;
 
-  constructor(private router: Router, private userService: UserService) { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
     this.alertMessage = "Welcome to PerkBank online banking!";
