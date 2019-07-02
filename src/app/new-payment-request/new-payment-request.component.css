@@ -92,3 +92,7 @@ div.new-payment-request-container .input-group-prepend {
 #submit-payment-order-button {
   max-width: 200px;
 }
+
+.form-buttons {
+  cursor: pointer;
+}

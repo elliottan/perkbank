@@ -18,6 +18,12 @@ export class DashboardComponent implements OnInit {
     var users = JSON.parse(localStorage.getItem("users"));
     this.name = users[sessionStorage.getItem("login-otp-auth")]["name"];
     this.draftCount = 0;
+
+    if (sessionStorage.getItem("systemMessage")) {
+      this.alertMessage = sessionStorage.getItem("systemMessage");
+      this.alertClass = "alert-warning";
+      sessionStorage.removeItem("systemMessage")
+    }
   }
 
   newPaymentRequest() {

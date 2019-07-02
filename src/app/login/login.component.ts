@@ -44,7 +44,7 @@ export class LoginComponent implements OnInit {
   }
 
   navigateToLoginSelection() {
-  sessionStorage.setItem("systemMessage", "Login cancelled.");
+    sessionStorage.setItem("systemMessage", "Login cancelled.");
     this.router.navigate(["/login-select"]);
   }
 

@@ -64,11 +64,30 @@ export class NewPaymentRequestComponent implements OnInit {
       // 1: Costs borne by beneficiary
       // 2: Costs borne by payer
       // 3: Shared costs
+
+      // Store payment request details
+      var paymentRequest = { "country": country, "accountname": accountname, "accountno": accountno,
+        "currency": currency, "amount": amount, "valuedate": valuedate, "charges": charges,
+        "beneficiaryname": beneficiaryname, "beneficiaryaccountno": beneficiaryaccountno,
+        "beneficiarybankcode": beneficiarybankcode, "beneficiarybankname": beneficiarybankname,
+        "intermediarybankcode": intermediarybankcode, "intermediarybankname": intermediarybankname,
+        "paymentdetails": paymentdetails }
+
+      if (localStorage.getItem("paymentrequests")) {
+        let username = sessionStorage.getItem("login-otp-auth");
+        JSON.parse(localStorage.getItem("paymentrequests"))[username] = JSON.stringify(paymentRequest);
+      } else {
+        localStorage.setItem("paymentrequests", JSON.stringify({ username: JSON.stringify(paymentRequest) }));
+      }
+
+      sessionStorage.setItem("systemMessage", "Payment request submitted.");
+      this.router.navigate(["/dashboard"]);
   }
 
   saveDraft(country, accountname, accountno, currency, amount, valuedate, charges,
     beneficiaryname, beneficiaryaccountno, beneficiarybankcode, beneficiarybankname,
     intermediarybankcode, intermediarybankname, paymentdetails) {
-
+      // TOOD: Save draft payment request
+      this.router.navigate(["/draft-payment-request"]);
   }
 }
