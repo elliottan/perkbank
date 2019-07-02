@@ -19,7 +19,7 @@
           <div class="text-left text-primary">What country is your beneficiary from?</div>
 
           <div class="input-group mb-3">
-            <select class="custom-select" #country id="inputGroupSelect01" (change)="changeCountry(country.value)">
+            <select class="custom-select inputGroupSelect" #country (change)="changeCountry(country.value)">
               <option selected>Choose a country...</option>
               <option value="1">Singapore</option>
               <option value="2">United States</option>
@@ -32,6 +32,45 @@
               <option value="9">India</option>
               <option value="10">Australia</option>
             </select>
+          </div>
+
+          <div class="section-split"></div>
+
+          <div class="form-group">
+            <div class="h4 text-left text-primary">Account details</div>
+            <div class="row">
+              <div class="col">
+                <div class="text-left text-primary">Account name</div>
+                <input type="text" #accountname class="form-control" placeholder="" name="accountname" ngModel>
+              </div>
+              <div class="col">
+                <div class="text-left text-primary">Account number</div>
+                <input type="text" #accountno class="form-control" placeholder="" name="accoutno" ngModel>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <div class="text-left text-primary">Currency</div>
+                <input type="text" #currency class="form-control" placeholder="" name="currency" ngModel>
+              </div>
+              <div class="col">
+                <div class="text-left text-primary">Amount</div>
+                <input type="text" #amount class="form-control" placeholder="" name="amount" ngModel>
+              </div>
+              <div class="col">
+                <div class="text-left text-primary">Value date</div>
+                <input type="text" #valuedate class="form-control" placeholder="" name="valuedate" ngModel>
+              </div>
+            </div>
+            <div class="text-left text-primary">Charges</div>
+            <div class="input-group mb-3">
+              <select class="custom-select inputGroupSelect" #costsborne ngModel>
+                <option selected>Choose who pays charges...</option>
+                <option value="1">Costs borne by beneficiary</option>
+                <option value="2">Costs borne by payer</option>
+                <option value="3">Shared costs</option>
+              </select>
+            </div>
           </div>
 
           <!--<form>

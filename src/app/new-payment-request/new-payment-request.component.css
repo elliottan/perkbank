@@ -21,7 +21,7 @@ div.new-payment-request-container h1 {
 }
 
 div.new-payment-request-container .form-group {
-  margin: auto;
+  max-width: 600px;
 }
 
 div.new-payment-request-container .form-group .text-primary{
@@ -84,7 +84,7 @@ div.new-payment-request-container .input-group-prepend {
   background-color: darkgray;
 }
 
-#inputGroupSelect01 {
+.inputGroupSelect {
   max-width: 300px;
   margin-top: 10px;
 }
