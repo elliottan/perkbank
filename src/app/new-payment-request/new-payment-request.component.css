@@ -3,7 +3,7 @@ div.new-payment-request-container {
   margin-top: 15px;
   margin-bottom: 15px;
   padding-top: 20px;
-  height: 780px;
+  height: 1500px;
   max-width: 1000px;
   background-color: #FFFFFF;
   border-width: 2;
@@ -87,4 +87,8 @@ div.new-payment-request-container .input-group-prepend {
 .inputGroupSelect {
   max-width: 300px;
   margin-top: 10px;
+}
+
+#submit-payment-order-button {
+  max-width: 200px;
 }

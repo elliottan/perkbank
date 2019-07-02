@@ -34,9 +34,9 @@
             </select>
           </div>
 
+          <!-- Form group start -->
           <div class="section-split"></div>
-
-          <div class="form-group">
+          <div class="form-group"> 
             <div class="h4 text-left text-primary">Account details</div>
             <div class="row">
               <div class="col">
@@ -45,7 +45,7 @@
               </div>
               <div class="col">
                 <div class="text-left text-primary">Account number</div>
-                <input type="text" #accountno class="form-control" placeholder="" name="accoutno" ngModel>
+                <input type="text" #accountno class="form-control" placeholder="" name="accountno" ngModel>
               </div>
             </div>
             <div class="row">
@@ -62,7 +62,9 @@
                 <input type="text" #valuedate class="form-control" placeholder="" name="valuedate" ngModel>
               </div>
             </div>
-            <div class="text-left text-primary">Charges</div>
+
+            <div class="section-split"></div>
+            <div class="h4 text-left text-primary">Charges</div>
             <div class="input-group mb-3">
               <select class="custom-select inputGroupSelect" #costsborne ngModel>
                 <option selected>Choose who pays charges...</option>
@@ -71,30 +73,75 @@
                 <option value="3">Shared costs</option>
               </select>
             </div>
-          </div>
 
-          <!--<form>
-            <div class="form-group">
-              <div #alert class="alert fade show" ngClass="{{alertClass}}" role="alert">{{alertMessage}}</div>
-              <div class="text-left text-primary">Full Name</div>
-              <input type="text" #name class="form-control" placeholder="" name="name" ngModel>
-              <div class="text-left text-primary">Username</div>
-              <input type="text" #username class="form-control" placeholder="" name="username" ngModel>
-              <div class="text-left text-primary">Password</div>
-              <input type="password" #password class="form-control" placeholder="" name="password">
-              <div class="text-left text-primary">Confirm Password</div>
-              <input type="password" #passwordconfirm class="form-control" placeholder="" name="password-confirm">
-              <div class="text-left text-primary">Mobile Number</div>
-              <input type="text" #mobilenumber class="form-control" placeholder="" name="mobile-number" ngModel>
-              <div class="text-left text-primary">Email Address</div>
-              <input type="text" #emailaddress class="form-control" placeholder="" name="email-address" ngModel>
-              <div class="input-group-text" (click)="register(name.value, username.value, password.value, passwordconfirm.value, mobilenumber.value, emailaddress.value)">Register</div>
-              <div class="input-group-prepend">
-                <div class="input-group-small-links" (click)="navigateToLoginSelection()">Cancel</div>
+            <div class="section-split"></div>
+            <div class="h4 text-left text-primary">Beneficiary</div>
+            <div class="row">
+              <div class="col">
+                <div class="text-left text-primary">Beneficiary name</div>
+                <input type="text" #beneficiaryname class="form-control" placeholder="" name="beneficiaryname" ngModel>
+              </div>
+              <div class="col">
+                <div class="text-left text-primary">Account number</div>
+                <input type="text" #beneficiaryaccountno class="form-control" placeholder="" name="beneficiaryaccountno" ngModel>
               </div>
             </div>
-          </form>-->
-        </div>
+            <div class="row">
+              <div class="col">
+                <div class="text-left text-primary">Bank BIC</div>
+                <input type="text" #beneficiarybankcode class="form-control" placeholder="" name="beneficiarybankcode" ngModel>
+              </div>
+              <div class="col">
+                <div class="text-left text-primary">Bank name</div>
+                <input type="text" #beneficiarybankname class="form-control" placeholder="" name="beneficiarybankname" ngModel>
+              </div>
+            </div>
+
+            <div class="section-split"></div>
+            <div class="h4 text-left text-primary">Intermediary (optional)</div>
+            <div class="row">
+              <div class="col">
+                <div class="text-left text-primary">Bank BIC</div>
+                <input type="text" #intermediarybankcode class="form-control" placeholder="" name="intermediarybankcode" ngModel>
+              </div>
+              <div class="col">
+                <div class="text-left text-primary">Bank name</div>
+                <input type="text" #intermediarybankname class="form-control" placeholder="" name="intermediarybankname" ngModel>
+              </div>
+            </div>
+
+            <div class="section-split"></div>
+            <div class="h4 text-left text-primary">Payment details (optional)</div>
+            <div class="row">
+              <div class="col">
+                <div class="text-left text-primary">Any additional information?</div>
+                <input type="text" #paymentdetails class="form-control" placeholder="" name="paymentdetails" ngModel>
+              </div>
+            </div>
+
+            <div class="section-split"></div>
+            <div class="h4 text-left text-primary">Acknowledgement</div>
+            <div class="row">
+              <div class="col">
+                <div class="checkbox">
+                  <div class="text-left text-primary"><input type="checkbox" value="">
+                    &nbsp;I acknowledge that I wish to submit this payment order.
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col">
+                <div class="input-group-text" id="submit-payment-order-button" (click)="submit(name.value, username.value, password.value, passwordconfirm.value, mobilenumber.value, emailaddress.value)">Submit Payment Order</div>
+              </div>
+              <div class="col">
+                <div class="input-group-text" (click)="saveDraft(name.value, username.value, password.value, passwordconfirm.value, mobilenumber.value, emailaddress.value)">Save Draft</div>
+              </div>
+            </div>
+          </div>
+          <!-- Form group end -->
+              
       </div>
     </div>
   </div>
